@@ -1,0 +1,131 @@
+- name: "Applications"
+  description: "Applications"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - audacity
+    - auto-cpufreq
+    - brave-bin
+    - cheese
+    - code
+    - emacs
+    - firefox
+    - flameshot
+    - flatpak
+    - galculator
+    - gimp
+    - htop
+    - kazam
+    - keepassxc
+    - kitty
+    - meld
+    - mpv
+    - telegram-desktop
+    - tlp
+    - tmux
+    - transmission-gtk
+    - yay-bin
+- name: "Utilities for Timeshift and Btrfs"
+  description: "Utility software"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - grub-btrfs
+    - timeshift
+    - timeshift-autosnap
+- name: "Xorg"
+  description: "Installs X system"
+  critical: false
+  hidden: false
+  selected: true
+  expanded: true
+  packages:
+    - xorg
+- name: "Login Manager: Lightdm"
+  description: "Installs lightdm"
+  critical: false
+  hidden: false
+  selected: true
+  expanded: true
+  packages:
+    - lightdm
+    - lightdm-gtk-greeter
+    - lightdm-gtk-greeter-settings
+- name: "Desktop: Xfce4"
+  description: "Installs xfce4 desktop"
+  critical: false
+  hidden: false
+  selected: true
+  expanded: true
+  packages:
+    - xfce4
+    - xfce4-goodies
+- name: "Desktop: i3"
+  description: "Installs i3 desktop"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - autotiling
+    - dmenu
+    - feh
+    - i3blocks
+    - i3-gaps
+    - i3status
+    - nitrogen
+    - picom
+    - polkit-gnome
+    - rofi
+    - thunar
+    - thunar-archive-plugin
+    - thunar-volman
+    - volumeicon
+    - xfce4-terminal
+    - xfce4-panel
+- name: "Xf86-drivers"
+  description: "Installs graphical drivers"
+  critical: false
+  hidden: false
+  selected: true
+  expanded: true
+  packages:
+    - xf86-video-vesa
+    - xf86-video-intel
+    - xf86-video-nouveau
+    - xf86-video-amdgpu
+    - xf86-video-ati
+    - xf86-video-openchrome
+- name: "Linux kernel - installed by default"
+  description: "Installs the latest linux kernel"
+  critical: false
+  hidden: false
+  selected: false
+  immutable: false
+  expanded: false
+  packages:
+    - linux
+    - linux-headers
+    - linux-firmware
+- name: "Linux-lts kernel"
+  description: "Installs the linux-lts kernel"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - linux-lts
+    - linux-lts-headers
+    - linux-firmware
+- name: "Linux-hardened kernel"
+  description: "Installs the linux-hardened kernel"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - linux-hardened
+    - linux-hardened-headers
+    - linux-firmware

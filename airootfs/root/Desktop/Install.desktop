@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Install
+Comment=Install Linux
+Exec=calamares
+Icon=/etc/calamares/branding/default/squid.png
+Path=
+Terminal=false
+StartupNotify=false
